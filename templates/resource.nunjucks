@@ -130,8 +130,9 @@
 {% endif %}
 
 {% for response in method.responses %}
-  {% if ((response.code == "200" or response.code == "201") and hasExamples(response.body)) %}
-    <blockquote><h3 h3 class="toc-ignore">RESPONSE BODY</h3></blockquote>
+  {# {% if ((response.code == "200" or response.code == "201") and hasExamples(response.body)) %} #}
+  {% if hasExamples(response.body) %}
+    <blockquote><h3 h3 class="toc-ignore">RESPONSE BODY - {{ response.code }}</h3></blockquote>
     {% for body in response.body %}
       {% for example in body.examples %}
 <div class="languagebox {{ getLanguage(body.key) }}">
