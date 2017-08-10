@@ -48,6 +48,14 @@
 {% endfor %}
 {% endif %}
 
+{% if (method.body | length) != 0 %}
+<br/>
+<p><strong><em><big>Body Parameters</big></em></strong></p>
+{% for param in method.body[0].properties %}
+{% include "parameter-table.nunjucks" %}
+{% endfor %}
+{% endif %}
+
 {% if getResponseHeaders(method) | length != 0 %}
 <br/>
 <p><strong><em><big>Response Headers</big></em></strong></p>
