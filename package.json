@@ -1,13 +1,13 @@
 {
   "name": "@mojotech/raml2html-slate-theme",
   "description": "A raml2html template for rendering RAML to a Slate like layout",
-  "version": "2.3.1",
-  "authors": [
-    {
+  "version": "2.3.2",
+  "author": {
       "name": "Wouter Dullaert",
       "email": "wouter.dullaert@gmail.com",
       "url": "https://wdullaer.com"
-    },
+  },
+  "contributors": [
     {
       "name": "Craig P Jolicoeur",
       "email": "craig@mojotech.com",
@@ -15,7 +15,7 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/wdullaer/raml2html-slate-theme/issues"
+    "url": "https://github.com/mojotech/raml2html-slate-theme/issues"
   },
   "dependencies": {
     "marked": "^0.3.6",
@@ -25,6 +25,7 @@
     "stylus": "^0.54.5"
   },
   "devDependencies": {
+    "@mojotech/raml2html": ">= 6.4.2",
     "chai": "^4.1.0",
     "chai-as-promised": "^7.1.1",
     "eslint": "^4.3.0",
@@ -35,7 +36,6 @@
     "eslint-plugin-standard": "^3.0.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.5.0",
-    "raml2html": "^6.4.0",
     "rewire": "^2.5.2"
   },
   "homepage": "https://github.com/mojotech/raml2html-slate-theme",
