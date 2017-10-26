@@ -11,9 +11,13 @@
     {%- endmarkdown %}
 
     {% if type.properties | length != 0 %}
+
+    {{ type.properties | dump }}
+
     <br/>
     <p><strong><em><big>Properties</big></em></strong></p>
     {% for param in type.properties -%}
+    {{ param | dump }}
     {% include "./parameter-table.nunjucks" %}
     {% endfor %}
     {% endif %}

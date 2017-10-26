@@ -1,7 +1,7 @@
 {
   "name": "@mojotech/raml2html-slate-theme",
   "description": "A raml2html template for rendering RAML to a Slate like layout",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "authors": [
     {
       "name": "Wouter Dullaert",

@@ -94,6 +94,7 @@ function loadLogo (logoPath) {
  * @return {string}          The final HTML
  */
 function renderHtml (basePath, ramlObj) {
+  console.log(ramlObj.types);
   const template = path.join(basePath, 'root.nunjucks')
   const env = nunjucks
     .configure(basePath, {autoescape: false})
